@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+main {
+  margin-top: 80px;
+  min-height: calc(100vh - 80px);
+}
+
+#logo {
+  width: 50px;
+  float: left;
+}
+
+nav {
+  float: right;
+
+}
+
+.container-footer {
+  justify-content: space-between;
+  display: flex;
+  max-width: 30%;
+  height: 50px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+  background-color: #555;
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  margin: 1.5rem 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.parcours {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.parcours::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: black;
+}
+
+.parcours-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.parcours-item::before {
+  content: '';
+  position: absolute;
+  left: -0.6rem;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: black;
+  border: 3px solid white;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical
+    /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: black;
+}
+
+/* Add a background color and some padding around the form */
+.form-container {
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  width: 80%;
+
+}

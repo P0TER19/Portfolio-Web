@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.container-footer {
+  justify-content: space-between;
+  display: flex;
+  max-width: 30%;
+  height: 50px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+main {
+  margin-top: 80px;
+  min-height: calc(100vh - 80px);
+}
+
+#logo {
+  width: 50px;
+  float: left;
+}
+
+#logo-footer {
+  width: 50px;
+  align-self: center;
+  justify-self: center;
+}
+
+nav {
+  float: right;
+
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+  background-color: #555;
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  margin: 1.5rem 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.parcours {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.parcours::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: black;
+}
+
+.parcours-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.parcours-item::before {
+  content: '';
+  position: absolute;
+  left: -0.6rem;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: black;
+  border: 3px solid white;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+#logo-club {
+  display: block;
+  margin: auto;
+  width: 200px;
+  align-self: center;
+}
+
+#image-club {
+  display: block;
+  margin: auto;
+  width: 400px;
+  align-self: center;
+}
+
+.images {
+  height: 200px;
+}
+
+.quiz-hero {
+  background-image: url("../../images/bg.jpg");
+  background-size: cover;
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.quiz-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.question {
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background: #f8fafc;
+  border-radius: 12px;
+  border-left: 5px solid black;
+}
+
+.question h3 {
+  color: black;
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.option:hover {
+  border-color: black;
+  background: #f0f9ff;
+}
+
+.option.selected {
+  border-color: black;
+  background: #eff6ff;
+}
+
+.option input[type="radio"] {
+  margin-right: 1rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  cursor: pointer;
+}
+
+.option label {
+  cursor: pointer;
+  flex: 1;
+  font-weight: 500;
+}
+
+.submit-btn {
+  background-color: black;
+  color: white;
+  padding: 1.2rem 3rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: block;
+  margin: 2rem auto;
+}
+
+.submit-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3);
+}
+
+.submit-btn:disabled {
+  background: #cbd5e1;
+  cursor: not-allowed;
+  transform: none;
+}
+
+#result {
+  display: none;
+  margin-top: 2rem;
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.result-card {
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.score-display {
+  font-size: 4rem;
+  font-weight: 800;
+  margin: 1.5rem 0;
+}
+
+.score-excellent {
+  color: purple;
+}
+
+.score-good {
+  color: green;
+}
+
+.score-average {
+  color: gray;
+}
+
+.score-poor {
+  color: red;
+}
+
+.reset-btn {
+  background: #64748b;
+  color: white;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 1.5rem;
+}
+
+.option.correct {
+  border-color: var(--success) !important;
+  background-color: #ecfdf5 !important;
+}
+
+.option.wrong {
+  border-color: var(--error) !important;
+  background-color: #fef2f2 !important;
+}

@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+main {
+  margin-top: 80px;
+  min-height: calc(100vh - 80px);
+}
+
+#logo {
+  width: 50px;
+  float: left;
+}
+
+nav {
+  float: right;
+
+}
+
+.container-footer {
+  justify-content: space-between;
+  display: flex;
+  max-width: 30%;
+  height: 50px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+  background-color: #555;
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  margin: 1.5rem 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.parcours {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.parcours::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: black;
+}
+
+.parcours-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.parcours-item::before {
+  content: '';
+  position: absolute;
+  left: -0.6rem;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: black;
+  border: 3px solid white;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+#logo-club {
+  display: block;
+  margin: auto;
+  width: 200px;
+  align-self: center;
+}
+
+#image-club {
+  display: block;
+  margin: auto;
+  width: 400px;
+  align-self: center;
+}
+
+.images {
+  height: 200px;
+}
